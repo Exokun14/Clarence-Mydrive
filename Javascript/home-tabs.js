@@ -14,6 +14,7 @@ function showAssignmentTab() {
     document.getElementById("exam-title").style.color = "#f1efef";
     document.getElementById("project-title").style.color = "#f1efef";
     document.getElementById("upload-title").style.color = "#f1efef";
+
 }
 
 function showQuizTab() {

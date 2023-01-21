@@ -74,52 +74,12 @@ body {
     background-color: var(--body-color);
 }
 
-#assign-tab {
-    display: none;
-}
-
-#assign-title:hover {
+.home-tab-buttons:hover {
     cursor: pointer;
 }
 
-#quiz-tab {
+.home-tab {
     display: none;
-}
-
-#quiz-title:hover {
-    cursor: pointer;
-}
-
-#assessment-tab {
-    display: none;
-}
-
-#assessment-title:hover {
-    cursor: pointer;
-}
-
-#exam-tab {
-    display: none;
-}
-
-#exam-title:hover {
-    cursor: pointer;
-}
-
-#project-tab {
-    display: none;
-}
-
-#project-title {
-    cursor: pointer;
-}
-
-#upload-tab {
-    display: none;
-}
-
-#upload-title:hover {
-    cursor: pointer;
 }
 
 #profile-picture {

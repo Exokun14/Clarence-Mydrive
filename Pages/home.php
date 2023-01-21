@@ -13,6 +13,10 @@
     </head>
 
     <body>
+        <?php
+            require '../Backend/database-connection.php';
+        ?>
+
         <div class="home-content">
 
             <div class="user-profile">
@@ -31,48 +35,48 @@
 
                 <div class="home-tabs">
 
-                    <p onclick="showAssignmentTab()" id="assign-title">Assignments</p>
-                    <p onclick="showQuizTab()" id="quiz-title">Quizzes</p>
-                    <p onclick="showAssessmentTab()" id="assessment-title">Assessments/Lab</p>
-                    <p onclick="showExamTab()" id="exam-title">Term Exams</p>
-                    <p onclick="showProjectTab()" id="project-title">Project</p>
-                    <p onclick="showUploadTab()" id="upload-title">Upload File</p>
+                    <p onclick="showAssignmentTab()" class="home-tab-buttons" id="assign-title">Assignments</p>
+                    <p onclick="showQuizTab()" class="home-tab-buttons"  id="quiz-title">Quizzes</p>
+                    <p onclick="showAssessmentTab()" class="home-tab-buttons" id="assessment-title">Assessments/Lab</p>
+                    <p onclick="showExamTab()" class="home-tab-buttons" id="exam-title">Term Exams</p>
+                    <p onclick="showProjectTab()" class="home-tab-buttons" id="project-title">Project</p>
+                    <p onclick="showUploadTab()" class="home-tab-buttons" id="upload-title">Upload File</p>
 
                 </div>
 
                 <div class="home-tab-content">
 
-                        <div id="assign-tab">
+                        <div class="home-tab" id="assign-tab">
 
                             <p>Assignments go here</p>
 
                         </div>
 
-                        <div id="quiz-tab">
+                        <div class="home-tab" id="quiz-tab">
 
                             <p>Quizzes go here</p>
                             
                         </div>
 
-                        <div id="assessment-tab">
+                        <div class="home-tab" id="assessment-tab">
 
                             <p>Assessments go here</p>
 
                         </div>
 
-                        <div id="exam-tab">
+                        <div class="home-tab" id="exam-tab">
 
                             <p>Exams go here</p>
 
                         </div>
 
-                        <div id="project-tab">
+                        <div class="home-tab" id="project-tab">
 
                             <p>Projects go here</p>
 
                         </div>
 
-                        <div id="upload-tab">
+                        <div class="home-tab" id="upload-tab">
 
                             <p>Uploads go here</p>
 
@@ -85,6 +89,7 @@
         </div>
 
         <script src="../Javascript/home-tabs.js"></script>
+        <script src="../Javascript/jquery-3.6.3.js"></script>
 
     </body>
 
