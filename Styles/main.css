@@ -1,0 +1,132 @@
+:root{
+    --main-font: serif;
+    --header-color: rgb(25, 25, 25);
+    --tab-color: rgb(48, 47, 47);
+    --background-color: rgb(140, 140, 140);
+    --body-color: #d6d6d6;
+    --font-color-main: #f1efef;
+    --font-color-sub: #44444c;
+}
+
+head {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: var(--main-font);
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--background-color);
+    color: var(--font-color-sub);
+}
+
+.header{
+    padding-top: .1px;
+    padding-left: 1%;
+    padding-bottom: .5px;
+    margin: 0%;
+    font-family: var(--main-font);
+    background-color: var(--header-color);
+    color: var(--font-color-main);
+
+    text-align: left;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+#welcome-message {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home-content {
+    padding-top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.user-profile {
+    height: 165%;
+    color: var(--font-color-main);
+    background-color: var(--header-color);
+}
+
+.home-tabs-container {
+    height: 165%;
+}
+
+.home-tabs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: var(--tab-color);
+    color: var(--font-color-main);
+}
+
+.home-tab-content {
+    height: 91.6%;
+    padding-top: 1%;
+    margin-top: 0%;
+    background-color: var(--body-color);
+}
+
+#assign-tab {
+    display: none;
+}
+
+#assign-title:hover {
+    cursor: pointer;
+}
+
+#quiz-tab {
+    display: none;
+}
+
+#quiz-title:hover {
+    cursor: pointer;
+}
+
+#assessment-tab {
+    display: none;
+}
+
+#assessment-title:hover {
+    cursor: pointer;
+}
+
+#exam-tab {
+    display: none;
+}
+
+#exam-title:hover {
+    cursor: pointer;
+}
+
+#project-tab {
+    display: none;
+}
+
+#project-title {
+    cursor: pointer;
+}
+
+#upload-tab {
+    display: none;
+}
+
+#upload-title:hover {
+    cursor: pointer;
+}
+
+#profile-picture {
+    margin-top: 8%;
+    height: 200px;
+    width: 200px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--header-color);
+}
