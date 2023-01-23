@@ -82,6 +82,12 @@ body {
     display: none;
 }
 
+#upload-form {
+    margin-top: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
 #profile-picture {
     margin-top: 8%;
     height: 200px;

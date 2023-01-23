@@ -76,11 +76,174 @@
 
                         </div>
 
-                        <div class="home-tab" id="upload-tab">
+                        <div id="upload-tab">
 
-                            <p>Uploads go here</p>
+                            <div class="home-tab" id = "upload-assignment-tab">
 
-                        </div>
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+
+                                    <fieldset>
+                                        <legend>Upload Assignment</legend>
+
+                                        <section>
+
+                                            <p>
+                                                Hi! Please browse for files using the button below to upload files onto the server. Thank you!
+                                            </p>
+
+                                            <p>
+                                                <input type="file" name="assign-file" id="assign-file" />
+                                            </p>
+
+                                        </section>
+
+                                    </fieldset>
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="upload-assign" value="Upload"/>
+                                        </label>
+                                    </footer>
+
+                                </form>
+                                <!--
+                                <form name="upload-assigment-form" action="../Backend/download.php" method="POST">
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="download-assign" value="Download"/>
+                                        </label>
+                                    </footer>
+
+                                </form> -->
+
+                            </div>
+
+                            <div class="home-tab" id = "upload-quiz-tab">
+
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+
+                                    <fieldset>
+                                        <legend>Upload Quiz</legend>
+
+                                        <section>
+
+                                            <p>
+                                                Hello
+                                            </p>
+
+                                            <p>
+                                                <input type="file" name="assign-file" id="assign-file" />
+                                            </p>
+
+                                        </section>
+
+                                    </fieldset>
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="upload-assign" value="Upload"/>
+                                        </label>
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+                            <div class="home-tab" id = "upload-assessment-tab">
+
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+
+                                    <fieldset>
+                                        <legend>Upload Assessment</legend>
+
+                                        <section>
+
+                                            <p>
+                                                Hello
+                                            </p>
+
+                                            <p>
+                                                <input type="file" name="assign-file" id="assign-file" />
+                                            </p>
+
+                                        </section>
+
+                                    </fieldset>
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="upload-assign" value="Upload"/>
+                                        </label>
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+                            <div class="home-tab" id = "upload-exam-tab">
+
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+
+                                    <fieldset>
+                                        <legend>Upload Exam</legend>
+
+                                        <section>
+
+                                            <p>
+                                                Hello
+                                            </p>
+
+                                            <p>
+                                                <input type="file" name="assign-file" id="assign-file" />
+                                            </p>
+
+                                        </section>
+
+                                    </fieldset>
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="upload-assign" value="Upload"/>
+                                        </label>
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+                            <div class="home-tab" id = "upload-project-tab">
+
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+
+                                    <fieldset>
+                                        <legend>Upload Project</legend>
+
+                                        <section>
+
+                                            <p>
+                                                Hello
+                                            </p>
+
+                                            <p>
+                                                <input type="file" name="assign-file" id="assign-file" />
+                                            </p>
+
+                                        </section>
+
+                                    </fieldset>
+
+                                    <footer>
+                                        <label>
+                                            <input type="submit" name="upload-assign" value="Upload"/>
+                                        </label>
+                                    </footer>
+
+                                </form>
+
+                            </div>
+
+                        <div>
 
                 </div>
 
