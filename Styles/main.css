@@ -83,9 +83,14 @@ body {
 }
 
 #upload-form {
-    margin-top: 1%;
+    text-align: center;
+    margin-top: 2.5%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+}
+
+#upload-button {
+    text-align: center;
 }
 
 #profile-picture {

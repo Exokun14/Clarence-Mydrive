@@ -88,21 +88,31 @@
                                         <section>
 
                                             <p>
-                                                Hi! Please browse for files using the button below to upload files onto the server. Thank you!
+                                                <label for="assign-no">Assignment No. </label>
+                                                <input type="int" name="assign-no"  maxlength="4" size="4" required/>
+
+                                                <label>Assignment Title: </label>
+                                                <input type="text" name="assign-title" maxlength="50" size="50" required/>
                                             </p>
 
+                                        </section>
+
+                                        <section>
+
                                             <p>
-                                                <input type="file" name="assign-file" id="assign-file" />
+                                                <label for="assign-file">Upload File:</label>
+                                                <input type="file" name="assign-file" id="assign-file" required/>
                                             </p>
 
                                         </section>
 
                                     </fieldset>
 
-                                    <footer>
-                                        <label>
-                                            <input type="submit" name="upload-assign" value="Upload"/>
-                                        </label>
+                                    <footer id="upload-button">
+
+                                        <label for="upload-assign">Upload Assignment</label>
+                                        <input type="submit" name="upload-assign" value="Upload"/>
+
                                     </footer>
 
                                 </form>
@@ -121,7 +131,7 @@
 
                             <div class="home-tab" id = "upload-quiz-tab">
 
-                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-quiz-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Quiz</legend>
@@ -129,21 +139,31 @@
                                         <section>
 
                                             <p>
-                                                Hello
+                                                <label for="quiz-no">Quiz No. </label>
+                                                <input type="int" name="quiz-no"  maxlength="4" size="4" required/>
+
+                                                <label>Quiz Title: </label>
+                                                <input type="text" name="quiz-title" maxlength="50" size="50" required/>
                                             </p>
 
+                                        </section>
+
+                                        <section>
+
                                             <p>
-                                                <input type="file" name="assign-file" id="assign-file" />
+                                                <label for="quiz-file">Upload File:</label>
+                                                <input type="file" name="quiz-file" id="quiz-file" required/>
                                             </p>
 
                                         </section>
 
                                     </fieldset>
 
-                                    <footer>
-                                        <label>
-                                            <input type="submit" name="upload-assign" value="Upload"/>
-                                        </label>
+                                    <footer id="upload-button">
+
+                                        <label for="upload-quiz">Upload Quiz</label>
+                                        <input type="submit" name="upload-quiz" value="Upload"/>
+
                                     </footer>
 
                                 </form>
@@ -152,7 +172,7 @@
 
                             <div class="home-tab" id = "upload-assessment-tab">
 
-                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-assessment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Assessment</legend>
@@ -160,21 +180,31 @@
                                         <section>
 
                                             <p>
-                                                Hello
+                                                <label for="assessment-no">Assessment No. </label>
+                                                <input type="int" name="assessment-no"  maxlength="4" size="4" required/>
+
+                                                <label>Assessment Title: </label>
+                                                <input type="text" name="assessment-title" maxlength="50" size="50" required/>
                                             </p>
 
+                                        </section>
+
+                                        <section>
+
                                             <p>
-                                                <input type="file" name="assign-file" id="assign-file" />
+                                                <label for="assessment-file">Upload File:</label>
+                                                <input type="file" name="assessment-file" id="assessment-file" required/>
                                             </p>
 
                                         </section>
 
                                     </fieldset>
 
-                                    <footer>
-                                        <label>
-                                            <input type="submit" name="upload-assign" value="Upload"/>
-                                        </label>
+                                    <footer id="upload-button">
+
+                                        <label for="upload-assessment">Upload Assessment</label>
+                                        <input type="submit" name="upload-assessment" value="Upload"/>
+
                                     </footer>
 
                                 </form>
@@ -183,7 +213,7 @@
 
                             <div class="home-tab" id = "upload-exam-tab">
 
-                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-exam-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Exam</legend>
@@ -191,21 +221,31 @@
                                         <section>
 
                                             <p>
-                                                Hello
+                                                <label for="exam-no">Exam No. </label>
+                                                <input type="int" name="exam-no"  maxlength="4" size="4" required/>
+
+                                                <label>Exam Title: </label>
+                                                <input type="text" name="exam-title" maxlength="50" size="50" required/>
                                             </p>
 
+                                        </section>
+
+                                        <section>
+
                                             <p>
-                                                <input type="file" name="assign-file" id="assign-file" />
+                                                <label for="exam-file">Upload File:</label>
+                                                <input type="file" name="exam-file" id="exam-file" required/>
                                             </p>
 
                                         </section>
 
                                     </fieldset>
 
-                                    <footer>
-                                        <label>
-                                            <input type="submit" name="upload-assign" value="Upload"/>
-                                        </label>
+                                    <footer id="upload-button">
+
+                                        <label for="upload-exam">Upload Exam</label>
+                                        <input type="submit" name="upload-exam" value="Upload"/>
+
                                     </footer>
 
                                 </form>
@@ -214,7 +254,7 @@
 
                             <div class="home-tab" id = "upload-project-tab">
 
-                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-project-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Project</legend>
@@ -222,21 +262,31 @@
                                         <section>
 
                                             <p>
-                                                Hello
+                                                <label for="project-no">Project No. </label>
+                                                <input type="int" name="project-no"  maxlength="4" size="4" required/>
+
+                                                <label>Project Title: </label>
+                                                <input type="text" name="project-title" maxlength="50" size="50" required/>
                                             </p>
 
+                                        </section>
+
+                                        <section>
+
                                             <p>
-                                                <input type="file" name="assign-file" id="assign-file" />
+                                                <label for="project-file">Upload File:</label>
+                                                <input type="file" name="project-file" id="project-file" required/>
                                             </p>
 
                                         </section>
 
                                     </fieldset>
 
-                                    <footer>
-                                        <label>
-                                            <input type="submit" name="upload-assign" value="Upload"/>
-                                        </label>
+                                    <footer id="upload-button">
+
+                                        <label for="upload-project">Upload Assignment</label>
+                                        <input type="submit" name="upload-project" value="Upload"/>
+
                                     </footer>
 
                                 </form>
