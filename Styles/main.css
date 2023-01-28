@@ -21,6 +21,40 @@ body {
     color: var(--font-color-sub);
 }
 
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--font-color-sub);
+}
+
+a:visited {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--font-color-sub); 
+}
+
+a:hover {
+    background-color: var(--font-color-sub);
+    color: var(--font-color-main);
+}
+
+button {
+    background: none;
+    border: none;
+    color: var(--font-color-sub);
+}
+
+button:hover {
+    background-color: var(--font-color-sub);
+    color: var(--font-color-main);
+}
+
+table, th, td {
+    margin-left: 3px;
+    border-collapse: collapse;
+    border: solid;
+}
+
 .header{
     padding-top: .1px;
     padding-left: 1%;
@@ -51,13 +85,9 @@ body {
 }
 
 .user-profile {
-    height: 165%;
+    max-height: 100%;
     color: var(--font-color-main);
     background-color: var(--header-color);
-}
-
-.home-tabs-container {
-    height: 165%;
 }
 
 .home-tabs {
@@ -68,10 +98,15 @@ body {
 }
 
 .home-tab-content {
-    height: 91.6%;
     padding-top: 1%;
     margin-top: 0%;
     background-color: var(--body-color);
+}
+
+.inner-tab-content {
+    min-height: 650px;
+    max-height: 650px;
+    overflow: auto;
 }
 
 .home-tab-buttons:hover {
@@ -82,11 +117,14 @@ body {
     display: none;
 }
 
+
 #upload-form {
     text-align: center;
     margin-top: 2.5%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+
+    min-height: 629px;
 }
 
 #upload-button {

@@ -14,6 +14,7 @@
 
     <body>
         <?php
+            require 'display.php';
             require '../Backend/database-connection.php';
         ?>
 
@@ -47,32 +48,43 @@
                 <div class="home-tab-content">
 
                         <div class="home-tab" id="assign-tab">
-
-                            <p>Assignments go here</p>
+                            
+                            <div class="inner-tab-content" id="assignment-content">
+                                "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                            </div>
+                            
 
                         </div>
 
                         <div class="home-tab" id="quiz-tab">
 
-                            <p>Quizzes go here</p>
+                            <div class="inner-tab-content" id="quiz-content">
+                                "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                            </div>
                             
                         </div>
 
                         <div class="home-tab" id="assessment-tab">
 
-                            <p>Assessments go here</p>
+                            <div class="inner-tab-content" id="assessment-content">
+                                "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                            </div>
 
                         </div>
 
                         <div class="home-tab" id="exam-tab">
 
-                            <p>Exams go here</p>
+                            <div class="inner-tab-content" id="exam-content">
+                                "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                            </div>
 
                         </div>
 
                         <div class="home-tab" id="project-tab">
 
-                            <p>Projects go here</p>
+                            <div class="inner-tab-content" id="project-content">
+                                "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                            </div>
 
                         </div>
 
@@ -301,8 +313,34 @@
 
         </div>
 
+        <script>
+            function displayAssignmentContent() {
+                let content = "<?php displayAssignment() ?>";
+                document.getElementById("assignment-content").innerHTML = content;
+            }
+
+            function displayQuizContent() {
+                let content = "<?php displayQuiz() ?>";
+                document.getElementById("quiz-content").innerHTML = content;
+            }
+
+            function displayAssessmentContent() {
+                let content = "<?php displayAssessment() ?>";
+                document.getElementById("assessment-content").innerHTML = content;
+            }
+
+            function displayExamContent() {
+                let content = "<?php displayExam() ?>";
+                document.getElementById("exam-content").innerHTML = content;
+            }
+
+            function displayProjectContent() {
+                let content = "<?php displayProject() ?>";
+                document.getElementById("project-content").innerHTML = content;
+            }
+
+        </script>
         <script src="../Javascript/home-tabs.js"></script>
-        <script src="../Javascript/jquery-3.6.3.js"></script>
 
     </body>
 

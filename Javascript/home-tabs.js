@@ -1,6 +1,8 @@
 window.onload = showAssignmentTab();
 
 function showAssignmentTab() {
+    displayAssignmentContent();
+
     document.getElementById("assign-tab").style.display = "unset";
     document.getElementById("quiz-tab").style.display = "none"
     document.getElementById("assessment-tab").style.display = "none";
@@ -24,6 +26,8 @@ function showAssignmentTab() {
 }
 
 function showQuizTab() {
+    displayQuizContent();
+
     document.getElementById("assign-tab").style.display = "none";
     document.getElementById("quiz-tab").style.display = "unset"
     document.getElementById("assessment-tab").style.display = "none";
@@ -46,6 +50,8 @@ function showQuizTab() {
 }
 
 function showAssessmentTab() {
+    displayAssessmentContent();
+
     document.getElementById("assign-tab").style.display = "none";
     document.getElementById("quiz-tab").style.display = "none"
     document.getElementById("assessment-tab").style.display = "unset";
@@ -68,6 +74,8 @@ function showAssessmentTab() {
 }
 
 function showExamTab() {
+    displayExamContent();
+
     document.getElementById("assign-tab").style.display = "none";
     document.getElementById("quiz-tab").style.display = "none"
     document.getElementById("assessment-tab").style.display = "none";
@@ -90,6 +98,8 @@ function showExamTab() {
 }
 
 function showProjectTab() {
+    displayProjectContent()
+
     document.getElementById("assign-tab").style.display = "none";
     document.getElementById("quiz-tab").style.display = "none"
     document.getElementById("assessment-tab").style.display = "none";
