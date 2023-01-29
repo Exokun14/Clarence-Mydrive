@@ -374,6 +374,31 @@
                 document.getElementById("project-content").innerHTML = content;
             }
 
+            function displayAssignmentArchive() {
+                let content = "<?php displayAssignmentArchive() ?>";
+                document.getElementById("archive-assignment").innerHTML = content;
+            }
+
+            function displayQuizArchive() {
+                let content = "<?php displayQuizArchive() ?>";
+                document.getElementById("archive-quiz").innerHTML = content;
+            }
+
+            function displayAssessmentArchive() {
+                let content = "<?php displayAssessmentArchive() ?>";
+                document.getElementById("archive-assessment").innerHTML = content;
+            }
+
+            function displayExamArchive() {
+                let content = "<?php displayExamArchive() ?>";
+                document.getElementById("archive-exam").innerHTML = content;
+            }
+
+            function displayProjectArchive() {
+                let content = "<?php displayProjectArchive() ?>";
+                document.getElementById("archive-project").innerHTML = content;
+            }
+
         </script>
         <script src="../Javascript/home-tabs.js"></script>
 

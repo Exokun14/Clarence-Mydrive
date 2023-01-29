@@ -26,55 +26,120 @@
     function archiveAssignment() {
         global $connection;
 
-        $assignID = $_POST['assign-id'];
+        if ($_POST['archive-id'] == 0) {
 
-        $sql = "UPDATE `assignment` SET `Archived`='1' WHERE `Assign_ID` = $assignID";
+            $assignID = $_POST['assign-id'];
 
-        $connection->query($sql);
-        header("Location: home.php");
+            $sql = "UPDATE `assignment` SET `Archived`='1' WHERE `Assign_ID` = $assignID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        } elseif ($_POST['archive-id'] == 1) {
+
+            $assignID = $_POST['assign-id'];
+
+            $sql = "UPDATE `assignment` SET `Archived`='0' WHERE `Assign_ID` = $assignID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        }
     }
 
     function archiveQuiz() {
         global $connection;
 
-        $quizID = $_POST['quiz-id'];
+        if ($_POST['archive-id'] == 0) {
 
-        $sql = "UPDATE `quiz` SET `Archived`='1' WHERE `Quiz_ID` = $quizID";
+            $quizID = $_POST['quiz-id'];
 
-        $connection->query($sql);
-        header("Location: home.php");
+            $sql = "UPDATE `quiz` SET `Archived`='1' WHERE `Quiz_ID` = $quizID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        } elseif ($_POST['archive-id'] == 1) {
+
+            $quizID = $_POST['quiz-id'];
+
+            $sql = "UPDATE `quiz` SET `Archived`='0' WHERE `Quiz_ID` = $quizID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        }
     }
 
     function archiveAssessment() {
         global $connection;
 
-        $assessmentID = $_POST['assessment-id'];
+        if ($_POST['archive-id'] == 0) {
 
-        $sql = "UPDATE `assessment` SET `Archived`='1' WHERE `Assessment_ID` = $assessmentID";
+            $assessmentID = $_POST['assessment-id'];
 
-        $connection->query($sql);
-        header("Location: home.php");
+            $sql = "UPDATE `assessment` SET `Archived`='1' WHERE `Assessment_ID` = $assessmentID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        } elseif ($_POST['archive-id'] == 1) {
+
+            $assessmentID = $_POST['assessment-id'];
+
+            $sql = "UPDATE `assessment` SET `Archived`='0' WHERE `Assessment_ID` = $assessmentID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        }
     }
 
     function archiveExam() {
         global $connection;
 
-        $examID = $_POST['exam-id'];
+        if ($_POST['archive-id'] == 0) {
 
-        $sql = "UPDATE `exam` SET `Archived`='1' WHERE `Exam_ID` = $examID";
+            $examID = $_POST['exam-id'];
 
-        $connection->query($sql);
-        header("Location: home.php");
+            $sql = "UPDATE `exam` SET `Archived`='1' WHERE `Exam_ID` = $examID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        } elseif ($_POST['archive-id'] == 1) {
+
+            $examID = $_POST['exam-id'];
+
+            $sql = "UPDATE `exam` SET `Archived`='0' WHERE `Exam_ID` = $examID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        }
     }
 
     function archiveProject() {
         global $connection;
 
-        $projectID = $_POST['project-id'];
+        if ($_POST['archive-id'] == 0) {
 
-        $sql = "UPDATE `project` SET `Archived`='1' WHERE `Project_ID` = $projectID";
+            $projectID = $_POST['project-id'];
 
-        $connection->query($sql);
-        header("Location: home.php");
+            $sql = "UPDATE `project` SET `Archived`='1' WHERE `Project_ID` = $projectID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        } elseif ($_POST['archive-id'] == 1) {
+
+            $projectID = $_POST['project-id'];
+
+            $sql = "UPDATE `project` SET `Archived`='0' WHERE `Project_ID` = $projectID";
+
+            $connection->query($sql);
+            header("Location: home.php");
+
+        }
     }
 ?>
