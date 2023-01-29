@@ -41,6 +41,7 @@
                     <p onclick="showAssessmentTab()" class="home-tab-buttons" id="assessment-title">Assessments/Lab</p>
                     <p onclick="showExamTab()" class="home-tab-buttons" id="exam-title">Term Exams</p>
                     <p onclick="showProjectTab()" class="home-tab-buttons" id="project-title">Project</p>
+                    <p onclick="showArchiveTab()" class="home-tab-buttons" id="archive-title">Archives</p>
                     <p onclick="showUploadTab()" class="home-tab-buttons" id="upload-title">Upload File</p>
 
                 </div>
@@ -88,11 +89,44 @@
 
                         </div>
 
+                        <div class="home-tab" id="archive-tab">
+
+                            <div class="inner-tab-content">
+
+                                <div id="archive-assignment">
+                                    "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                                    "Nasa 1 ka"
+                                </div>
+
+                                <div id="archive-quiz">
+                                    "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                                    "Nasa 2 ka"
+                                </div>
+
+                                <div id="archive-assessment">
+                                    "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                                    "Nasa 3 ka"
+                                </div>
+
+                                <div id="archive-exam">
+                                    "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                                    "Nasa 4 ka"
+                                </div>
+
+                                <div id="archive-project">
+                                    "I am Ashe, Daughter of Grena! Warmother of the Avarosans!".
+                                    "Nasa 5 ka"
+                                </div>
+
+                            </div>
+
+                        </div>
+
                         <div id="upload-tab">
 
                             <div class="home-tab" id = "upload-assignment-tab">
 
-                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-assigment-form" enctype="multipart/form-data" action="../Backend/upload.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Assignment</legend>
@@ -143,7 +177,7 @@
 
                             <div class="home-tab" id = "upload-quiz-tab">
 
-                                <form id="upload-form" name="upload-quiz-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-quiz-form" enctype="multipart/form-data" action="../Backend/upload.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Quiz</legend>
@@ -184,7 +218,7 @@
 
                             <div class="home-tab" id = "upload-assessment-tab">
 
-                                <form id="upload-form" name="upload-assessment-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-assessment-form" enctype="multipart/form-data" action="../Backend/upload.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Assessment</legend>
@@ -225,7 +259,7 @@
 
                             <div class="home-tab" id = "upload-exam-tab">
 
-                                <form id="upload-form" name="upload-exam-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-exam-form" enctype="multipart/form-data" action="../Backend/upload.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Exam</legend>
@@ -266,7 +300,7 @@
 
                             <div class="home-tab" id = "upload-project-tab">
 
-                                <form id="upload-form" name="upload-project-form" enctype="multipart/form-data" action="../Backend/upload-assignment.php" method="POST">
+                                <form id="upload-form" name="upload-project-form" enctype="multipart/form-data" action="../Backend/upload.php" method="POST">
 
                                     <fieldset>
                                         <legend>Upload Project</legend>
@@ -304,6 +338,7 @@
                                 </form>
 
                             </div>
+                            
 
                         <div>
 

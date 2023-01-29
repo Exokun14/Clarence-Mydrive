@@ -4,8 +4,8 @@
 
         global $connnection;
 
-        $sql = "SELECT `Assign_No`, `Assign_Title`, `Assign_Type`, `Content`, `Upload_By`, 
-        `Upload_Date`, `User_ID` FROM `assignment`";
+        $sql = "SELECT `Assign_ID`, `Assign_No`, `Assign_Title`, `Assign_Type`, `Content`, `Upload_By`, 
+        `Upload_Date`, `User_ID`, `Archived` FROM `assignment`";
 
         $result = $connection->query($sql);
 
@@ -20,20 +20,29 @@
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>".
-                    "<td>" . $row['Assign_No'] . "</td>" .
-                    "<td>" . $row['Assign_Title'] . "</td>" .
-                    "<td>" . $row['Assign_Type'] . "</td>" .
-                    "<td>" . $row['Content'] . "</td>" .
-                    "<td>" . $row['Upload_By'] . "</td>" .
-                    "<td>" . $row['Upload_Date'] . "</td>" .
-                    "<td>" .
-                        "<button>View</button></br>" .
-                        "<button>Edit</button></br>" .
-                        "<button>Archive</button></br>" .
-                        "<a href='../Uploads/Assignments/" . $row['Content'] . "' download>Download</a></br>".
-                    "</td>" .
-                    "</tr>";
+
+                if ($row['Archived'] == 0) {
+
+                    echo "<tr>".
+                        "<td>" . $row['Assign_No'] . "</td>" .
+                        "<td>" . $row['Assign_Title'] . "</td>" .
+                        "<td>" . $row['Assign_Type'] . "</td>" .
+                        "<td>" . $row['Content'] . "</td>" .
+                        "<td>" . $row['Upload_By'] . "</td>" .
+                        "<td>" . $row['Upload_Date'] . "</td>" .
+                        "<td>" .
+                            "<button>View</button></br>" .
+                            "<button>Edit</button></br>" .
+                            "<form action='archive.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='assign-id' value = '" . $row['Assign_ID'] . "' />" .
+                                "<button name='archive-assignment-form' onclick='submit()'>Archive</button></br>" .
+                            "</form>" .
+                            "<a href='../Uploads/Assignments/" . $row['Content'] . "' download>Download</a></br>".
+                        "</td>" .
+                        "</tr>";
+
+                }
+
             }
         
             echo "</table>";
@@ -49,8 +58,8 @@
 
         global $connnection;
 
-        $sql = "SELECT `Quiz_No`, `Quiz_Title`, `Quiz_Type`, `Content`, `Upload_By`, 
-        `Upload_Date`, `User_ID` FROM `quiz`";
+        $sql = "SELECT `Quiz_ID`, `Quiz_No`, `Quiz_Title`, `Quiz_Type`, `Content`, `Upload_By`, 
+        `Upload_Date`, `User_ID`, `Archived` FROM `quiz`";
 
         $result = $connection->query($sql);
 
@@ -66,20 +75,29 @@
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>".
-                    "<td>" . $row['Quiz_No'] . "</td>" .
-                    "<td>" . $row['Quiz_Title'] . "</td>" .
-                    "<td>" . $row['Quiz_Type'] . "</td>" .
-                    "<td>" . $row['Content'] . "</td>" .
-                    "<td>" . $row['Upload_By'] . "</td>" .
-                    "<td>" . $row['Upload_Date'] . "</td>" .
-                    "<td>" .
-                        "<button>View</button></br>" .
-                        "<button>Edit</button></br>" .
-                        "<button>Archive</button></br>" .
-                        "<a href='../Uploads/Quizzes/" . $row['Content'] . "' download>Download</a></br>".
-                    "</td>" .
-                    "</tr>";
+
+                if ($row['Archived'] == 0) {
+
+                    echo "<tr>".
+                        "<td>" . $row['Quiz_No'] . "</td>" .
+                        "<td>" . $row['Quiz_Title'] . "</td>" .
+                        "<td>" . $row['Quiz_Type'] . "</td>" .
+                        "<td>" . $row['Content'] . "</td>" .
+                        "<td>" . $row['Upload_By'] . "</td>" .
+                        "<td>" . $row['Upload_Date'] . "</td>" .
+                        "<td>" .
+                            "<button>View</button></br>" .
+                            "<button>Edit</button></br>" .
+                            "<form action='archive.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='quiz-id' value = '" . $row['Quiz_ID'] . "' />" .
+                                "<button name='archive-quiz-form' onclick='submit()'>Archive</button></br>" .
+                            "</form>" .
+                            "<a href='../Uploads/Quizzes/" . $row['Content'] . "' download>Download</a></br>".
+                        "</td>" .
+                        "</tr>";
+
+                }
+
             }
         
             echo "</table>";
@@ -95,8 +113,8 @@
 
         global $connnection;
 
-        $sql = "SELECT `Assessment_No`, `Assessment_Title`, `Assessment_Type`, `Content`, `Upload_By`, 
-        `Upload_Date`, `User_ID` FROM `assessment`";
+        $sql = "SELECT `Assessment_ID`, `Assessment_No`, `Assessment_Title`, `Assessment_Type`, `Content`, `Upload_By`, 
+        `Upload_Date`, `User_ID`, `Archived` FROM `assessment`";
 
         $result = $connection->query($sql);
 
@@ -111,20 +129,29 @@
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>".
-                    "<td>" . $row['Assessment_No'] . "</td>" .
-                    "<td>" . $row['Assessment_Title'] . "</td>" .
-                    "<td>" . $row['Assessment_Type'] . "</td>" .
-                    "<td>" . $row['Content'] . "</td>" .
-                    "<td>" . $row['Upload_By'] . "</td>" .
-                    "<td>" . $row['Upload_Date'] . "</td>" .
-                    "<td>" .
-                        "<button>View</button></br>" .
-                        "<button>Edit</button></br>" .
-                        "<button>Archive</button></br>" .
-                        "<a href='../Uploads/Assessments/" . $row['Content'] . "' download>Download</a></br>".
-                    "</td>" .
-                    "</tr>";
+
+                if ($row['Archived'] == 0) {
+
+                    echo "<tr>".
+                        "<td>" . $row['Assessment_No'] . "</td>" .
+                        "<td>" . $row['Assessment_Title'] . "</td>" .
+                        "<td>" . $row['Assessment_Type'] . "</td>" .
+                        "<td>" . $row['Content'] . "</td>" .
+                        "<td>" . $row['Upload_By'] . "</td>" .
+                        "<td>" . $row['Upload_Date'] . "</td>" .
+                        "<td>" .
+                            "<button>View</button></br>" .
+                            "<button>Edit</button></br>" .
+                            "<form action='archive.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='assessment-id' value = '" . $row['Assessment_ID'] . "' />" .
+                                "<button name='archive-assessment-form' onclick='submit()'>Archive</button></br>" .
+                            "</form>" .
+                            "<a href='../Uploads/Assessments/" . $row['Content'] . "' download>Download</a></br>".
+                        "</td>" .
+                        "</tr>";
+
+                }
+
             }
         
             echo "</table>";
@@ -140,8 +167,8 @@
 
         global $connnection;
 
-        $sql = "SELECT `Exam_No`, `Exam_Title`, `Exam_Type`, `Content`, `Upload_By`, 
-        `Upload_Date`, `User_ID` FROM `exam`";
+        $sql = "SELECT `Exam_ID`, `Exam_No`, `Exam_Title`, `Exam_Type`, `Content`, `Upload_By`, 
+        `Upload_Date`, `User_ID`, `Archived` FROM `exam`";
 
         $result = $connection->query($sql);
 
@@ -157,20 +184,28 @@
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>".
-                    "<td>" . $row['Exam_No'] . "</td>" .
-                    "<td>" . $row['Exam_Title'] . "</td>" .
-                    "<td>" . $row['Exam_Type'] . "</td>" .
-                    "<td>" . $row['Content'] . "</td>" .
-                    "<td>" . $row['Upload_By'] . "</td>" .
-                    "<td>" . $row['Upload_Date'] . "</td>" .
-                    "<td>" .
-                        "<button>View</button></br>" .
-                        "<button>Edit</button></br>" .
-                        "<button>Archive</button></br>" .
-                        "<a href='../Uploads/Exams/" . $row['Content'] . "' download>Download</a></br>".
-                    "</td>" .
-                    "</tr>";
+
+                if ($row['Archived'] == 0) {
+
+                    echo "<tr>".
+                        "<td>" . $row['Exam_No'] . "</td>" .
+                        "<td>" . $row['Exam_Title'] . "</td>" .
+                        "<td>" . $row['Exam_Type'] . "</td>" .
+                        "<td>" . $row['Content'] . "</td>" .
+                        "<td>" . $row['Upload_By'] . "</td>" .
+                        "<td>" . $row['Upload_Date'] . "</td>" .
+                        "<td>" .
+                            "<button>View</button></br>" .
+                            "<button>Edit</button></br>" .
+                            "<form action='archive.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='exam-id' value = '" . $row['Exam_ID'] . "' />" .
+                                "<button name='archive-exam-form' onclick='submit()'>Archive</button></br>" .
+                            "</form>" .
+                            "<a href='../Uploads/Exams/" . $row['Content'] . "' download>Download</a></br>".
+                        "</td>" .
+                        "</tr>";
+                }
+
             }
         
             echo "</table>";
@@ -186,8 +221,8 @@
 
         global $connnection;
 
-        $sql = "SELECT `Project_No`, `Project_Title`, `Project_Type`, `Content`, `Upload_By`, 
-        `Upload_Date`, `User_ID` FROM `project`";
+        $sql = "SELECT `Project_ID`, `Project_No`, `Project_Title`, `Project_Type`, `Content`, `Upload_By`, 
+        `Upload_Date`, `User_ID`, `Archived` FROM `project`";
 
         $result = $connection->query($sql);
 
@@ -202,20 +237,29 @@
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "<tr>".
-                    "<td>" . $row['Project_No'] . "</td>" .
-                    "<td>" . $row['Project_Title'] . "</td>" .
-                    "<td>" . $row['Project_Type'] . "</td>" .
-                    "<td>" . $row['Content'] . "</td>" .
-                    "<td>" . $row['Upload_By'] . "</td>" .
-                    "<td>" . $row['Upload_Date'] . "</td>" .
-                    "<td>" .
-                        "<button>View</button></br>" .
-                        "<button>Edit</button></br>" .
-                        "<button>Archive</button></br>" .
-                        "<a href='../Uploads/Projects/" . $row['Content'] . "' download>Download</a></br>".
-                    "</td>" .
-                    "</tr>";
+
+                if ($row['Archived'] == 0) {
+
+                    echo "<tr>".
+                        "<td>" . $row['Project_No'] . "</td>" .
+                        "<td>" . $row['Project_Title'] . "</td>" .
+                        "<td>" . $row['Project_Type'] . "</td>" .
+                        "<td>" . $row['Content'] . "</td>" .
+                        "<td>" . $row['Upload_By'] . "</td>" .
+                        "<td>" . $row['Upload_Date'] . "</td>" .
+                        "<td>" .
+                            "<button>View</button></br>" .
+                            "<button>Edit</button></br>" .
+                            "<form action='archive.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='project-id' value = '" . $row['Project_ID'] . "' />" .
+                                "<button name='archive-project-form' onclick='submit()'>Archive</button></br>" .
+                            "</form>" .
+                            "<a href='../Uploads/Projects/" . $row['Content'] . "' download>Download</a></br>".
+                        "</td>" .
+                        "</tr>";
+
+                }
+
             }
         
             echo "</table>";

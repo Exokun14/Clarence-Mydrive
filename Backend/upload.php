@@ -39,9 +39,13 @@
         VALUES ('$fileNo', '$fileTitle', '$fileType', '$fileName',  '$uploadedBy',  '$uploadedOn',  '$archived',  '$userID')";
 
         if (mysqli_query($connection, $sql)) {
-        echo "Yehey";
+            
+            header("Location: ../Pages/home.php");
+
         } else {
+
             echo "not yehey";
+
         }
 
 
