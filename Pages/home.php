@@ -24,11 +24,61 @@
 
                 <img src="../Pics/profile.jpg" alt="" id="profile-picture">
 
-                <p>2020102399</p>
-                <p>John Clarence O. Joven</p>
-                <p>Bachelor of Science Major in Information Technology</p>
-                <p>Paombong, Bulacan</p>
-                <p>09212684748</p>
+                <div class="user-info">
+
+                    <p id="user-number">
+                        2020102399
+                    </p>
+
+                </div>
+
+                <div class="user-info">
+
+                    <p>
+                        <img src="../Pics/person.png" alt="" class="icons">
+                    </p>
+
+                    <p id="user-info-data">
+                        John Clarence O. Joven
+                    </p>
+
+                </div>
+
+                <div class="user-info">
+
+                    <p>
+                        <img src="../Pics/course.png" alt="" class="icons">
+                    </p>
+
+                    <p id="user-info-data">
+                        Bachelor of Science Major in Information Technology
+                    </p>
+
+                </div>
+
+                <div class="user-info">
+
+                    <p>
+                        <img src="../Pics/location.png" alt="" class="icons">
+                    </p>
+
+                    <p id="user-info-data">
+                        Paombong, Bulacan
+                    </p>
+
+                </div>
+
+                <div class="user-info">
+
+                    <p>
+                        <img src="../Pics/phone.png" alt="" class="icons">
+                    </p>
+
+                    <p id="user-info-data">
+                        09212684748
+                    </p>
+
+                </div>
 
             </div>
 

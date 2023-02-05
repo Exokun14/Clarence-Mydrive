@@ -32,8 +32,14 @@
                         "<td>" . $row['Upload_By'] . "</td>" .
                         "<td>" . $row['Upload_Date'] . "</td>" .
                         "<td>" .
-                            "<button>View</button></br>" .
-                            "<button>Edit</button></br>" .
+                            "<form action='view.php' method='POST'>" .
+                                "<input type='int' id='view-form' name='assign-id' value = '" . $row['Assign_ID'] . "' />" .
+                                "<button name='view-assignment-form' onclick='submit()'>View</button></br>" .
+                            "</form>" .
+                            "<form action='Edit/update-assignment.php' method='POST'>" .
+                                "<input type='int' id='edit-form' name='assign-id' value = '" . $row['Assign_ID'] . "' />" .
+                                "<button name='edit-assignment-form' onclick='submit()'>Edit</button></br>" .
+                            "</form>" .
                             "<form action='archive.php' method='POST'>" .
                                 "<input type='int' id='archive-form' name='archive-id' value = '" . $archive . "' />" .
                                 "<input type='int' id='archive-form' name='assign-id' value = '" . $row['Assign_ID'] . "' />" .
@@ -89,8 +95,14 @@
                         "<td>" . $row['Upload_By'] . "</td>" .
                         "<td>" . $row['Upload_Date'] . "</td>" .
                         "<td>" .
-                            "<button>View</button></br>" .
-                            "<button>Edit</button></br>" .
+                            "<form action='view.php' method='POST'>" .
+                                "<input type='int' id='archive-form' name='quiz-id' value = '" . $row['Quiz_ID'] . "' />" .
+                                "<button name='view-quiz-form' onclick='submit()'>View</button></br>" .
+                            "</form>" .
+                            "<form action='Edit/update-quiz.php' method='POST'>" .
+                                "<input type='int' id='edit-form' name='quiz-id' value = '" . $row['Quiz_ID'] . "' />" .
+                                "<button name='edit-quiz-form' onclick='submit()'>Edit</button></br>" .
+                            "</form>" .
                             "<form action='archive.php' method='POST'>" .
                                 "<input type='int' id='archive-form' name='archive-id' value = '" . $archive . "' />" .
                                 "<input type='int' id='archive-form' name='quiz-id' value = '" . $row['Quiz_ID'] . "' />" .
@@ -145,8 +157,14 @@
                         "<td>" . $row['Upload_By'] . "</td>" .
                         "<td>" . $row['Upload_Date'] . "</td>" .
                         "<td>" .
-                            "<button>View</button></br>" .
-                            "<button>Edit</button></br>" .
+                            "<form action='view.php' method='POST'>" .
+                                "<input type='int' id='view-form' name='assessment-id' value = '" . $row['Assessment_ID'] . "' />" .
+                                "<button name='view-assessment-form' onclick='submit()'>View</button></br>" .
+                            "</form>" .
+                            "<form action='Edit/update-assessment.php' method='POST'>" .
+                                "<input type='int' id='edit-form' name='assessment-id' value = '" . $row['Assessment_ID'] . "' />" .
+                                "<button name='edit-assessment-form' onclick='submit()'>Edit</button></br>" .
+                            "</form>" .
                             "<form action='archive.php' method='POST'>" .
                                 "<input type='int' id='archive-form' name='archive-id' value = '" . $archive . "' />" .
                                 "<input type='int' id='archive-form' name='assessment-id' value = '" . $row['Assessment_ID'] . "' />" .
@@ -202,8 +220,14 @@
                         "<td>" . $row['Upload_By'] . "</td>" .
                         "<td>" . $row['Upload_Date'] . "</td>" .
                         "<td>" .
-                            "<button>View</button></br>" .
-                            "<button>Edit</button></br>" .
+                            "<form action='view.php' method='POST'>" .
+                                "<input type='int' id='view-form' name='exam-id' value = '" . $row['Exam_ID'] . "' />" .
+                                "<button name='view-exam-form' onclick='submit()'>View</button></br>" .
+                            "</form>" .
+                            "<form action='Edit/update-exam.php' method='POST'>" .
+                                "<input type='int' id='edit-form' name='exam-id' value = '" . $row['Exam_ID'] . "' />" .
+                                "<button name='edit-exam-form' onclick='submit()'>Edit</button></br>" .
+                            "</form>" .
                             "<form action='archive.php' method='POST'>" .
                                 "<input type='int' id='archive-form' name='archive-id' value = '" . $archive . "' />" .
                                 "<input type='int' id='archive-form' name='exam-id' value = '" . $row['Exam_ID'] . "' />" .
@@ -257,8 +281,14 @@
                         "<td>" . $row['Upload_By'] . "</td>" .
                         "<td>" . $row['Upload_Date'] . "</td>" .
                         "<td>" .
-                            "<button>View</button></br>" .
-                            "<button>Edit</button></br>" .
+                            "<form action='view.php' method='POST'>" .
+                                "<input type='int' id='view-form' name='project-id' value = '" . $row['Project_ID'] . "' />" .
+                                "<button name='view-project-form' onclick='submit()'>View</button></br>" .
+                            "</form>" .
+                            "<form action='Edit/update-project.php' method='POST'>" .
+                                "<input type='int' id='edit-form' name='project-id' value = '" . $row['Project_ID'] . "' />" .
+                                "<button name='edit-project-form' onclick='submit()'>Edit</button></br>" .
+                            "</form>" .
                             "<form action='archive.php' method='POST'>" .
                                 "<input type='int' id='archive-form' name='archive-id' value = '" . $archive . "' />" .
                                 "<input type='int' id='archive-form' name='project-id' value = '" . $row['Project_ID'] . "' />" .

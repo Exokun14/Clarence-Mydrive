@@ -85,6 +85,27 @@ table, th, td {
     grid-template-columns: 30% 70%;
 }
 
+.user-info {
+    font-family: var(--main-font);
+    display: flex;
+    margin-left: 20%;
+    text-align: left;
+}
+
+#user-number {
+    margin-left: 25%;
+}
+
+#user-info-data {
+    padding-top: 5px;
+    margin-left: 2%;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+}
+
 .user-profile {
     max-height: 100%;
     color: var(--font-color-main);
@@ -173,4 +194,36 @@ table, th, td {
 #login-footer {
     text-align: center;
     background-color: var(--font-color-sub);
+}
+
+#edit-form, #view-form {
+    display: none;
+}
+
+.update-title {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+    padding-top: .5%;
+    padding-bottom: 1%;
+
+    text-align: center;
+    color: var(--font-color-main);
+    font-family: var(--main-font);
+    background-color: var(--header-color);
+}
+
+.update-tab {
+    margin-left: 35%;
+    margin-right: 35%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    font-family: var(--main-font);
+    text-align: center;
+    line-height: 150%;
+    color: var(--font-color-sub);
+    background-color: var(--font-color-main);
 }
