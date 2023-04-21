@@ -14,6 +14,10 @@
         $userName = $_POST['user-name'];
         $userPassword = $_POST['user-password'];
 
+        echo "Hello";
+        echo $userName;
+        echo $userPassword;
+
         $sql = "SELECT `User_ID` FROM `profile` WHERE `Username` = '". $userName . "'" .
         "AND `Password` = '" . $userPassword . "'";
         $result = $connection->query($sql);
