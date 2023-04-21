@@ -2,7 +2,7 @@
     --main-font: serif;
     --header-color: rgb(25, 25, 25);
     --tab-color: rgb(48, 47, 47);
-    --background-color: rgb(140, 140, 140);
+    --background-color: rgb(197, 197, 197);
     --body-color: #d6d6d6;
     --font-color-main: #f1efef;
     --font-color-sub: #44444c;
@@ -139,7 +139,8 @@ table, th, td {
     display: none;
 }
 
-#upload-form {
+#upload-form 
+{
     text-align: center;
     margin-top: 2.5%;
     margin-left: 2.5%;
@@ -148,7 +149,8 @@ table, th, td {
     min-height: 629px;
 }
 
-#upload-button {
+#upload-button 
+{
     text-align: center;
 }
 
@@ -161,39 +163,121 @@ table, th, td {
     border-color: var(--header-color);
 }
 
-#archive-form {
+#archive-form 
+{
     display: none;
 }
 
+.input-field 
+{
+    text-align: left;
+    min-width: 250px;
+}
+
+#input-field 
+{
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: var(--font-color-sub);
+    background-color: var(--body-color);
+}
+
+#submit-form-button 
+{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.login-page-container 
+{
+    min-width: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 0.2fr;
+    grid-gap: 10px;
+}
+
+.home-image-carousel 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+}
+
+#home-image-carousel
+{
+    border-radius: 25px;
+    height: 420px;
+    width: 550px;
+}
+
 .login-form {
-    margin-top: 12%;
-    margin-left: 35%;
-    margin-right: 35%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
     color: var(--font-color-main);
 }
 
 #login-form {
+    margin-top: 0%;
+    justify-content: center;
     border-color: #44444c;
 }
 
-#login-header {
-    text-align: center;
-    padding: 1px;
-    background-color: var(--header-color);
+#login-button
+{
+    font-family: var(--main-font);
+    font-size: 24px;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-bottom: 3%;
 }
 
-#login-content {
-    min-height: 250px;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    text-align: center;
-    color: var(--font-color-sub);
+
+.login-form-container 
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    padding-top: 25px;
+    min-height: 350px;
+    min-width: 380px;
+    max-width: 380px;
     background-color: var(--body-color);
 }
 
-#login-footer {
+#login-header {
+    border-radius: 25px;
+    min-width: 100px;
+    max-width: 320px;
     text-align: center;
-    background-color: var(--font-color-sub);
+    font-size: 36px;
+    color: var(--font-color-sub);
+    padding: 1px;
+}
+
+#login-content {
+    border-radius: 25px;
+    min-height: 200px;
+    min-width: 100px;
+    max-width: 320px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: var(--font-color-sub);
+}
+
+#login-footer {
+    color: var(--font-color-sub);
+    border-radius: 25px;
+    min-height: 20px;
+    max-height: 45px;
+    min-width: 100px;
+    max-width: 320px;
+    text-align: center;
 }
 
 #edit-form, #view-form {
