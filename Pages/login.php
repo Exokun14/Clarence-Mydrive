@@ -18,11 +18,23 @@
 
             <div class="home-image-carousel">
 
-                <div class="my-slides">
+                <div class="my-slides-1">
+
+                    <img src="../Pics/Lux_42.jpg" id="home-image-carousel">
 
                 </div>
 
-                <img src="../Pics/Lux_42.jpg" id="home-image-carousel">
+                <div class="my-slides-2" style="display: none;">
+
+                    <img src="../Pics/Lux_42.jpg" id="home-image-carousel">
+
+                </div>
+
+                <div class="my-slides-3" style="display: none;">
+
+                    <img src="../Pics/Lux_42.jpg" id="home-image-carousel">
+
+                </div>
 
             </div>
 
