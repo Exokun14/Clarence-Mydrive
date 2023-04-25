@@ -1,4 +1,67 @@
+:root
+{
+    --main-font: serif;
+    --header-color: rgb(25, 25, 25);
+    --tab-color: rgb(48, 47, 47);
+    --background-color: rgb(255, 255, 255);
+    --body-color: #d6d6d6;
+    --font-color-main: #f1efef;
+    --font-color-sub: #44444c;
+}
+
 body
 {
+    font-family: var(--main-font);
     background-image: url("../Pics/background2.jpg");
+}
+
+.registered-prompt-container
+{
+    text-align: center;
+    opacity: 80%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--body-color);
+}
+
+#registered-emote
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 5%;
+}
+
+.registered-prompt-header
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    padding-top: 25px;
+    min-height: 350px;
+    min-width: 380px;
+    max-width: 380px;
+    background-color: var(--body-color);
+}
+
+.registered-prompt-title
+{
+    font-size: 24px;
+}
+
+.registered-prompt-content
+{
+    font-size: 16px;
+}
+
+.registered-prompt-button
+{
+    font-family: var(--main-font);
+    font-size: 22px;
+    text-align: center;
+    margin-left: 28%;
+    margin-right: 28%;
+    background-color: var(--body-color);
 }

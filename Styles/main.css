@@ -237,20 +237,6 @@ table, th, td {
     grid-gap: 10px;
 }
 
-.home-image-carousel 
-{
-    display: flex;
-    justify-content: center;
-    margin-top: 13%;
-}
-
-#home-image-carousel
-{
-    border-radius: 25px;
-    height: 420px;
-    width: 550px;
-}
-
 .login-form {
     display: flex;
     justify-content: center;
@@ -259,7 +245,6 @@ table, th, td {
 }
 
 #login-form {
-    margin-top: 0%;
     justify-content: center;
     border-color: #44444c;
 }
