@@ -1,6 +1,6 @@
 <?php
     $serverName = "localhost";
-    $databaseName = "mydrive";
+    $databaseName = "dbms";
     $username = "root";
     $password = "";
 

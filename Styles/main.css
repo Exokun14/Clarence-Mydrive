@@ -2,7 +2,7 @@
     --main-font: serif;
     --header-color: rgb(25, 25, 25);
     --tab-color: rgb(48, 47, 47);
-    --background-color: rgb(197, 197, 197);
+    --background-color: rgb(255, 255, 255);
     --body-color: #d6d6d6;
     --font-color-main: #f1efef;
     --font-color-sub: #44444c;
@@ -200,8 +200,34 @@ table, th, td {
     font-size: 36px;
 }
 
+.login-header
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+    margin-bottom: 13%;
+}
+
+#login-header-text-a
+{
+    color: var(--font-color-main);
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+#login-header-text-b
+{
+    color: var(--font-color-main);
+    padding-left: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
 .login-page-container 
 {
+    opacity: 80%;
     min-width: 400px;
     max-width: 1200px;
     margin: 0 auto;
