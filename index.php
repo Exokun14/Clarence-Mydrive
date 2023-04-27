@@ -5,6 +5,6 @@
 		$uri = 'http://';
 	}
 	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/Clarence-Mydrive/Pages/login.php');
+	header('Location: '.$uri.'/Clarence-Mydrive/Pages/get-started.php');
 	exit;
 ?>
