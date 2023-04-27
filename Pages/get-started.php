@@ -24,6 +24,7 @@
                 </svg>
                 <a href="login.php" id="login-header-text-b">Login</a>
             </div>
+            
         </div>
 
     </head>
@@ -40,7 +41,7 @@
                 </div>
                 <div class="get-started">
                     <div class="get-started-button">
-                        <a href="get-started.php" id="get-started-button">GET STARTED</a>
+                        <a href="account-creation.php" id="get-started-button">GET STARTED</a>
                     </div>
                 </div>
             </div>
@@ -58,6 +59,12 @@
                     <button onclick="showImageCarousel(2)" id="content-1-button">></button>
                 </div>
 
+                <div class="content-paragraph">
+                    <p>Robust and Powerful! We offer a file management that eases the workload. </br>
+                        Either for assigning or keeping track of activities whilst providing reliability and security.
+                    </p>
+                </div>
+
             </div>
 
             <div id="banner-content-2">
@@ -70,6 +77,12 @@
                     <button onclick="showImageCarousel(3)" id="content-1-button">></button>
                 </div>
 
+                <div class="content-paragraph">
+                    <p>No hidden fees or data mining! We can assure you that the files stored are reliably kept. </br>
+                        We wont jinx you we promise! Our slogan, catchphrase, or tagline is always "Get Jinxed!".
+                    </p>
+                </div>
+
             </div>
 
             <div id="banner-content-3">
@@ -80,6 +93,12 @@
                     <button onclick="showImageCarousel(2)" id="content-1-button"><</button>
                     <img id="content-1-banner" src="../Pics/ahried.png"></img>
                     <button onclick="showImageCarousel(1)" id="content-1-button">></button>
+                </div>
+
+                <div class="content-paragraph">
+                    <p>Be in control! We offer admin privileges that enable your admins! </br>
+                       Assign work to your workers with ease.. Make them sufferr!!
+                    </p>
                 </div>
 
             </div>

@@ -1,0 +1,129 @@
+:root
+{
+    --main-font: serif;
+    --header-color: rgb(25, 25, 25);
+    --tab-color: rgb(48, 47, 47);
+    --background-color: rgb(255, 255, 255);
+    --body-color: #d6d6d6;
+    --font-color-main: #f1efef;
+    --font-color-sub: #44444c;
+}
+
+body
+{
+    width: 100%;
+    font-family: var(--main-font);
+    background-image: url('../Pics/background6.png');
+    background-repeat: no-repeat;
+    background-position: 48% top;
+}
+
+.account-creation-container
+{
+    display: flex;
+    justify-content: center;
+}
+.container-1
+{
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+    max-width: 250px;
+    max-height: 450px;
+    display: flex;
+    background-color: var(--font-color-sub);
+    opacity: 90%;
+    border-radius: 25px;
+    color: var(--font-color-main);
+    margin-right: 5%;
+    margin-top: 13%;
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+.container-2
+{
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+    max-width: 250px;
+    max-height: 450px;
+    display: flex;
+    background-color: var(--body-color);
+    opacity: 90%;
+    border-radius: 25px;
+    color: var(--font-color-sub);
+    margin-left: 5%;
+    margin-top: 13%;
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+.reg-header
+{
+    font-size: 18px;
+    text-align: center;
+    line-height: 0%;
+}
+
+#reg-header
+{
+    text-decoration: underline;
+    text-align: center;   
+}
+
+#reg-sub-header
+{
+    padding-top: 5px;
+    text-decoration: unset;
+    font-size: 16px;
+}
+
+.reg-content
+{
+    padding-top: 0%;
+    padding-top: 1.5%;
+    padding-bottom: 5%;
+    line-height: 25px;
+    text-align: left;
+}
+
+.get-started
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.get-started-button
+{
+    padding: 3%;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+    width: 75px;
+    border-radius: 25px;
+    background: linear-gradient(to right, rgb(72, 131, 240), rgb(70, 70, 70) 100%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+#get-started-button
+{
+    color: var(--font-color-main);
+}
+
+#get-started-button:hover
+{
+    background: none;
+}
+
+.get-started-button:hover
+{
+    background-position: left bottom;
+    transition: .5s;
+}
+

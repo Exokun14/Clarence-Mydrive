@@ -180,3 +180,11 @@ body
     color: #ffd375;
     transition: .8s;
 }
+
+.content-paragraph
+{
+    text-align: center;
+    margin-top: 5%;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
