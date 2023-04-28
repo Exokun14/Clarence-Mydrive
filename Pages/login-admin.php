@@ -40,7 +40,7 @@
                         
                         <div id="login-header">
 
-                            <h3>Login as </br> Regular User</h3>
+                            <h3>Login as Staff</h3>
 
                         </div>
 
@@ -84,7 +84,7 @@
 
                         <div id="login-footer">
 
-                            Login to access your files and activities. </br>
+                            Login to access your staff dashboard. </br>
 
                         </div>
 

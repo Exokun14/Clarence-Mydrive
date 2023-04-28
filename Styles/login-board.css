@@ -13,7 +13,7 @@ body
 {
     width: 100%;
     font-family: var(--main-font);
-    background-image: url('../Pics/background6.png');
+    background-image: url('../Pics/background.jpg');
     background-repeat: no-repeat;
     background-position: 48% top;
 }
@@ -28,10 +28,11 @@ body
     animation: fadeInLeft;
     animation-duration: 1.5s;
     min-width: 250px;
-    min-height: 450px;
+    min-height: 400px;
     max-width: 250px;
-    max-height: 450px;
+    max-height: 400px;
     display: block;
+    justify-content: center;
     background-color: var(--font-color-sub);
     opacity: 90%;
     border-radius: 25px;
@@ -49,15 +50,16 @@ body
     animation: fadeInRight;
     animation-duration: 1.5s;
     min-width: 250px;
-    min-height: 450px;
+    min-height: 400px;
     max-width: 250px;
-    max-height: 450px;
+    max-height: 400px;
     display: block;
+    justify-content: center;
     background-color: var(--body-color);
     opacity: 90%;
     border-radius: 25px;
     color: var(--font-color-sub);
-    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 13%;
     padding-top: 1%;
     padding-left: 4%;
@@ -129,5 +131,19 @@ body
 {
     background-position: left bottom;
     transition: .5s;
+}
+
+#login-board-pic
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+    height: 175px;
+}
+
+#login-board-message
+{
+    text-align: center;
 }
 

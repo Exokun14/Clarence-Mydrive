@@ -1,7 +1,7 @@
 <html>
 
     <meta name="viewport" content="width=decive-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/login.css">
+    <link rel="stylesheet" href="../Styles/login-board.css">
     <link rel="stylesheet" href="../Styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -24,74 +24,52 @@
                 </svg>
                 <a href="login-board.php" id="login-header-text-b">Login</a>
             </div>
+
         </div>
 
     </head>
 
     <body>
 
-        <div class=login-page-container>
+        <div class="account-creation-container">
 
-            <div class="login-form">
+            <div class="container-1">
+                <div class="reg-header">
+                    <h1 id="reg-header">LOGIN</h1>
+                    <h3 id="reg-sub-header">as a staff member</h3>
 
-                <div class="login-form-container">
+                    <div class="reg-content">
+                        <h4>Login for staff members only!</h4>
+                        <img id="login-board-pic" src="../Pics/Admin.png"></img>
+                    </div>
 
-                    <form action="login-verification.php" method="POST">
-                        
-                        <div id="login-header">
-
-                            <h3>Login as </br> Regular User</h3>
-
+                    <div class="get-started">
+                        <div class="get-started-button">
+                            <a href="login-admin.php" id="get-started-button">LOG IN</a>
                         </div>
+                    </div>
+                    
+                </div>
 
-                        <div id="login-content">
+            </div>
 
-                            <div class="input-field">
+            <div class="container-2">
+                <div class="reg-header">
+                    <h1 id="reg-header">LOGIN</h1>
+                    <h3 id="reg-sub-header">as a regular user</h3>
 
-                                <p>
+                    <div class="reg-content">
+                        <h4 id="login-board-message">Login for regular users.</h4>
+                        <img id="login-board-pic" src="../Pics/User.png"></img>
+                    </div>
 
-                                    <label>Username: </label>
-
-                                </p>
-
-                                <p>
-
-                                    <input type="text" id="input-field" name="user-name" size="35" required/>
-
-                                </p>
-
-                                <p>
-
-                                    <label for="user-password">Password: </label>
-
-                                </p>
-
-                                <p>
-
-                                    <input type="password" id="input-field" name="user-password" size="35" required/>
-
-                                </p>
-
-                            </div>
-
+                    <div class="get-started">
+                        <div class="get-started-button">
+                            <a href="login.php" id="get-started-button">LOG IN</a>
                         </div>
+                    </div>
+                </div>
 
-                        <div id=submit-form-button>
-
-                            <input type="submit" name="login-form-submit" id="login-button" value="Login"/>
-
-                        </div>
-
-                        <div id="login-footer">
-
-                            Login to access your files and activities. </br>
-
-                        </div>
-
-                    </form>
-
-                <div>
-                
             </div>
 
         </div>

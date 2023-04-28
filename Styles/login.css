@@ -1,6 +1,8 @@
 body 
 {
-    background-image: url("../Pics/background.jpg");
+    width: 100%;
+    font-family: var(--main-font);
+    background-image: url('../Pics/background.jpg');
     background-repeat: no-repeat;
-    background-clip: calc();
+    background-position: 48% top;
 }
