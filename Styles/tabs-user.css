@@ -173,6 +173,7 @@ a, a:visited, a:hover, a:active
 
 .tab-description-actions
 {
+    margin-top: 3%;
     display: flex;
     justify-content: center;
 }
@@ -186,6 +187,7 @@ a, a:visited, a:hover, a:active
 
 #add-files
 {
+    text-decoration: none;
     cursor: pointer;
     padding: 5px;
     color: var(--font-color-sub);
@@ -203,6 +205,7 @@ a, a:visited, a:hover, a:active
 #mark-as-done
 {
     cursor: pointer;
+    text-decoration: none;
     padding: 5px;
     color: var(--font-color-sub);
     border-radius: 25px;
@@ -226,4 +229,36 @@ a, a:visited, a:hover, a:active
 #upload-date
 {
     margin-left: 10%;
+}
+
+#form-holder
+{
+    text-align: center;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+#file-upload
+{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#file-count
+{
+    display: none;
+}
+
+.results
+{
+    text-align: center;
+}
+
+#results-pic
+{
+    height: 380px;
+    width: 380px;
 }

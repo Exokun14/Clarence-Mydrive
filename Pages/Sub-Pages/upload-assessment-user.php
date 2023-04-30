@@ -71,8 +71,7 @@
                         require '../../Backend/database-connection.php';
 
                         global $connection;
-                        $num = $_POST['num'];
-                        $_SESSION['num'] = $num;
+                        $num = $_SESSION['num'];
                         $title;
                         $description;
                         $uploadBy;
@@ -108,23 +107,23 @@
                         echo "
                             <h3 id='tab-content-alt-header'> Assessment Title: $title</h3>
                             <div class='view-tab-container'>
-                                <h3>Assessment Description:</h3>
-                                <p id='tab-description'>$description</p>
+                                <h3>Assessment Submission:</h3>
+                                <form action='upload-assessment-user-backend.php' enctype='multipart/form-data' method='POST' id='form-holder'>
+                                    <p id='max-file-reached'></p>
+                                    <div id='input-holder'>
+                                        <input id='file-upload' name='file-1' type='file' required></input>
+                                    </div>
+                                    <input id='file-count' name='file-count' type='num' value='1'></p>
+                                    <input type='submit' id='add-files' value='SUBMIT'></input>
+                                </form>
+                                <button id='mark-as-done' onclick='newUploadPage()'>ADD MORE</button>
 
                                 <div class='attachment-container'>
-                                    <img id='tab-description-pic' src='../../Pics/gwen.png'></img>
+                                    <img id='tab-description-pic' src='../../Pics/leesin.webp'></img>
                                     <div class='attachment-content'>
-                                        <p>Here's an attachment for you!</p>
-                                        <a href='../../Uploads/assessment-uploads-admin/" .$content. "' download='" .$content. "'>$content</a>
+                                        <p>'I will struggle, I will fail, but to surrender is a privilege I do not have.'</p>
+                                        
                                     </div>
-                                </div>
-
-                                <div class='tab-description-actions'>
-                                    <div class='tab-description-actions-empty'>
-                                        <a href='upload-assessment-user.php' id='add-files'>ADD FILES</a>
-                                        <a id='mark-as-done'>MARK AS DONE</a>
-                                    </div>
-
                                 </div>
 
                                 <div class='upload-details'>
@@ -140,6 +139,31 @@
             </div>
 
         </div>
+
+        <script>
+            var fileCount = 1;
+            var maxFileCount = 5;
+
+            function newUploadPage()
+                {
+                    if (fileCount < 5)
+                    {
+                        fileCount += 1;
+                        var fileCounter = document.getElementById('file-count');
+                        fileCounter.setAttribute('value', fileCount);
+                        var input = document.createElement("input");
+                        input.setAttribute('type', 'file');
+                        input.setAttribute('id', 'file-upload');
+                        input.setAttribute('name', 'file-' + fileCount);
+                        var uploadForm = document.getElementById('input-holder').appendChild(input);
+                    } 
+                    else 
+                    {
+                        var fileReached = document.getElementById('max-file-reached');
+                        fileReached.innerHTML = "FILE UPLOAD LIMIT REACHED!";
+                    }
+                }
+        </script>
 
     </body>
 

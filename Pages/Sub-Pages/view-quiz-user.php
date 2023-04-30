@@ -72,6 +72,7 @@
 
                         global $connection;
                         $num = $_POST['num'];
+                        $_SESSION['num'] = $num;
                         $title;
                         $description;
                         $uploadBy;
@@ -120,8 +121,8 @@
 
                                 <div class='tab-description-actions'>
                                     <div class='tab-description-actions-empty'>
-                                        <p id='add-files'>ADD FILES</p>
-                                        <p id='mark-as-done'>MARK AS DONE</p>
+                                        <a href='upload-quiz-user.php' id='add-files'>ADD FILES</a>
+                                        <a id='mark-as-done'>MARK AS DONE</a>
                                     </div>
 
                                 </div>

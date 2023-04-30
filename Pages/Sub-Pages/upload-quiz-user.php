@@ -59,7 +59,7 @@
     <body>
 
         <div class="tab-content-container">
-            <p onclick="location.href='assessment-user.php'" id="back-button">
+            <p onclick="location.href='quiz-user.php'" id="back-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
                 </svg>
@@ -71,14 +71,13 @@
                         require '../../Backend/database-connection.php';
 
                         global $connection;
-                        $num = $_POST['num'];
-                        $_SESSION['num'] = $num;
+                        $num = $_SESSION['num'];
                         $title;
                         $description;
                         $uploadBy;
                         $uploadDate;
 
-                        $sql = "SELECT * FROM `assessment` WHERE `Assessment_ID` = '". $num . "'";
+                        $sql = "SELECT * FROM `quiz` WHERE `Quiz_ID` = '". $num . "'";
                         $result = $connection->query($sql);
 
                         if ($result->num_rows > 0) 
@@ -106,25 +105,25 @@
                         }
 
                         echo "
-                            <h3 id='tab-content-alt-header'> Assessment Title: $title</h3>
+                            <h3 id='tab-content-alt-header'> Quiz Title: $title</h3>
                             <div class='view-tab-container'>
-                                <h3>Assessment Description:</h3>
-                                <p id='tab-description'>$description</p>
+                                <h3>Quiz Submission:</h3>
+                                <form action='upload-quiz-user-backend.php' enctype='multipart/form-data' method='POST' id='form-holder'>
+                                    <p id='max-file-reached'></p>
+                                    <div id='input-holder'>
+                                        <input id='file-upload' name='file-1' type='file' required></input>
+                                    </div>
+                                    <input id='file-count' name='file-count' type='num' value='1'></p>
+                                    <input type='submit' id='add-files' value='SUBMIT'></input>
+                                </form>
+                                <button id='mark-as-done' onclick='newUploadPage()'>ADD MORE</button>
 
                                 <div class='attachment-container'>
-                                    <img id='tab-description-pic' src='../../Pics/gwen.png'></img>
+                                    <img id='tab-description-pic' src='../../Pics/leesin.webp'></img>
                                     <div class='attachment-content'>
-                                        <p>Here's an attachment for you!</p>
-                                        <a href='../../Uploads/assessment-uploads-admin/" .$content. "' download='" .$content. "'>$content</a>
+                                        <p>'I will struggle, I will fail, but to surrender is a privilege I do not have.'</p>
+                                        
                                     </div>
-                                </div>
-
-                                <div class='tab-description-actions'>
-                                    <div class='tab-description-actions-empty'>
-                                        <a href='upload-assessment-user.php' id='add-files'>ADD FILES</a>
-                                        <a id='mark-as-done'>MARK AS DONE</a>
-                                    </div>
-
                                 </div>
 
                                 <div class='upload-details'>
@@ -140,6 +139,31 @@
             </div>
 
         </div>
+
+        <script>
+            var fileCount = 1;
+            var maxFileCount = 5;
+
+            function newUploadPage()
+                {
+                    if (fileCount < 5)
+                    {
+                        fileCount += 1;
+                        var fileCounter = document.getElementById('file-count');
+                        fileCounter.setAttribute('value', fileCount);
+                        var input = document.createElement("input");
+                        input.setAttribute('type', 'file');
+                        input.setAttribute('id', 'file-upload');
+                        input.setAttribute('name', 'file-' + fileCount);
+                        var uploadForm = document.getElementById('input-holder').appendChild(input);
+                    } 
+                    else 
+                    {
+                        var fileReached = document.getElementById('max-file-reached');
+                        fileReached.innerHTML = "FILE UPLOAD LIMIT REACHED!";
+                    }
+                }
+        </script>
 
     </body>
 

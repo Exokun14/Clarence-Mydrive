@@ -45,7 +45,7 @@
                 ?>
 
                 <div class="options"> 
-                    <p>ACCOUNT INFORMATION</p>
+                    <p onclick="location.href='account-details.php'">ACCOUNT INFORMATION</p>
                     <p onclick="location.href='logout.php'">LOG OUT</p>
                 </div>
 
