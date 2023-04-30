@@ -66,10 +66,10 @@
                 Back
             </p>
             <div class="tab-content">
-                <h3 id="tab-content-header">WELCOME TO ASSIGNMENTS TAB</h3>
+                <h3 id="tab-content-header">WELCOME TO ASSESSMENTS TAB</h3>
 
                 <?php
-                    require 'assignment-user-display.php';
+                    require 'assessment-user-display.php';
 
                     display();
                 ?>

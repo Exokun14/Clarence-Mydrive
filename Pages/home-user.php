@@ -102,7 +102,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages/quiz-user.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-pages/assessment-user.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages/exam-user.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages/project-user.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
