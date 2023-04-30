@@ -20,9 +20,12 @@
                                 <img id='tab-content-pic' src='../../Pics/assessment.png'></img>
                                 <p> " . $row['Assessment_Title'] . "</p>
 
-                                <div class='tab-content-actions'>
-                                    <p>VIEW</p>
-                                </div>
+                                <form action='view-assessment-user.php' method='POST'>
+                                    <input id='user-input' type='number' name='num' value='" . $row['Assessment_ID'] . "'></input>
+                                    <div class='tab-content-actions'>
+                                        <input type='submit' name='view-assessment' id='submit-button' value='VIEW'</input>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -66,7 +66,7 @@
                 Back
             </p>
             <div class="tab-content">
-                <h3 id="tab-content-header">WELCOME TO EXAMINATIONS TAB</h3>
+                <h3 id="tab-content-header">WELCOME TO EXAMS TAB</h3>
 
                 <?php
                     require 'exam-user-display.php';

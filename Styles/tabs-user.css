@@ -9,6 +9,12 @@
     --font-color-sub: #44444c;
 }
 
+a, a:visited, a:hover, a:active
+{
+    text-decoration: underline;
+    color: inherit;
+}
+
 .tab-content-container
 {
     display: flex;
@@ -33,8 +39,20 @@
 
 #tab-content-header
 {
+    min-width: 600px;
+    max-width: 600px;
+    text-align: center;
     text-decoration: underline;
-    font-size: 36px;
+    font-size: 34px;
+}
+
+#tab-content-alt-header
+{
+    min-width: 600px;
+    max-width: 600px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
 }
 
 .tab-content-entry
@@ -90,3 +108,122 @@
     width: 250px;
 }
 
+#submit-button
+{
+    text-align: center;
+    margin-top: 25%;
+    font-family: var(--main-font);
+    color: var(--font-color-main);
+    padding: 5px;
+    border-color: var(--body-color);
+    border-radius: 25px;
+    width: auto;
+    background-image: linear-gradient(to right, rgb(56, 56, 56), rgb(121, 121, 121));
+}
+
+#submit-button:hover
+{
+    background-image: linear-gradient(to right, rgb(66, 66, 66), rgb(175, 175, 175));
+}
+
+#user-input
+{
+    display: none;
+}
+
+.view-tab-container
+{
+    min-width: 600px;
+    max-width: 600px;
+}
+
+#tab-description
+{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 280px;
+    max-height: 280px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.attachment-container
+{
+    display: flex;
+    justify-content: left;
+}
+
+.attachment-content
+{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+#attachment-content-title
+{
+    font-size: 24px;
+    color: var(--font-color-main);
+}
+
+#tab-description-pic
+{
+    height: 120px;
+    width: 120px;
+}
+
+.tab-description-actions
+{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-description-actions-empty
+{
+    min-width: 540px;
+    display: flex;
+    justify-content: center;
+}
+
+#add-files
+{
+    cursor: pointer;
+    padding: 5px;
+    color: var(--font-color-sub);
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(248, 248, 248), rgb(173, 173, 173));
+    margin-left: 7%;
+    margin-right: 3%;
+}
+
+#add-files:hover
+{
+    background-image: linear-gradient(to right, rgb(248, 248, 248), rgb(255, 255, 255));
+}
+
+#mark-as-done
+{
+    cursor: pointer;
+    padding: 5px;
+    color: var(--font-color-sub);
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(248, 248, 248), rgb(173, 173, 173));
+    margin-left: 3%;
+}
+
+#mark-as-done:hover 
+{
+    background-image: linear-gradient(to right, rgb(248, 248, 248), rgb(255, 255, 255));
+}
+
+.upload-details
+{
+    min-width: 540px;
+    word-wrap: break-word;
+    display: inline-flex;
+    margin-left: 10%;
+}
+
+#upload-date
+{
+    margin-left: 10%;
+}
