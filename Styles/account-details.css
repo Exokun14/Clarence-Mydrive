@@ -19,3 +19,138 @@ body
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+.account-details-container
+{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: var(--font-color-main);
+    margin-top: 5%;
+    min-height: 660px;
+    min-width: 550px;
+    max-width: 550px;
+    margin-left: 28%;
+    margin-right: 28%;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, rgba(43, 42, 42, 0.8), rgba(129, 129, 129, 0.8));
+
+}
+
+#account-details-header
+{
+    padding-top: 1%;
+    margin-bottom: 5%;
+}
+
+#user-profile
+{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(173, 173, 173);
+    background-color: aliceblue;
+    height: 225px;
+    width: 225px;
+}
+
+.account-details-content-1
+{
+    text-align: center;
+}
+
+.icon-container
+{
+    margin-top: 0%;
+    margin-bottom:0% ;
+    margin-left: 0%;
+    display: inline-flex;
+}
+
+.icons
+{
+    display: block;
+}
+
+#icon-container-pic
+{
+    padding-right: 3px;
+}
+
+#icon-container-text
+{
+    padding-right: 10px;
+}
+
+.educ
+{
+    margin-left: 5%;
+    overflow: auto;
+    text-align: center;
+}
+
+#personal-info-container
+{
+    display: none;
+}
+
+#personal-info-header
+{
+    display: none;
+}
+
+.personal-info
+{
+    min-height: 160px;
+    max-height: 160px;
+    overflow: auto;
+}
+
+#education-container
+{
+    display: none;
+}
+
+#education-header
+{
+    display: none;
+}
+
+.education
+{
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#education
+{
+    text-align: left;
+}
+
+#award-container
+{
+    display: none;
+}
+
+#award-header
+{
+    display: none;
+}
+
+.awards
+{
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.options-container
+{
+    display: inline-flex;
+}
+
+.get-started-button
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}

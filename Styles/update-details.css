@@ -1,0 +1,21 @@
+:root
+{
+    --main-font: serif;
+    --header-color: rgb(25, 25, 25);
+    --tab-color: rgb(48, 47, 47);
+    --background-color: rgb(255, 255, 255);
+    --body-color: #d6d6d6;
+    --font-color-main: #f1efef;
+    --font-color-sub: #44444c;
+}
+
+body
+{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    font-family: var(--main-font);
+    background-image: url('../Pics/background11.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}

@@ -89,6 +89,8 @@ body
 
 .home-content
 {
+    animation: fadeInUp;
+    animation-duration: 1s;
     display: flex;
     margin-left: 4%;
     margin-right: 19%;
@@ -96,6 +98,8 @@ body
 
 .home-content-header
 {
+    animation: fadeIn;
+    animation-duration: 1s;
     display: flex;
     color: var(--font-color-main);
     justify-content: center;
