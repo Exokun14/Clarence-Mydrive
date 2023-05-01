@@ -41,6 +41,7 @@ body
 {
     padding-top: 1%;
     margin-bottom: 5%;
+    display: inline-flex;
 }
 
 #user-profile

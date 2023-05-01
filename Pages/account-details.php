@@ -153,15 +153,22 @@
                             </div>
 
                             <div class='options-container'>
+
                                 <div class="get-started">
                                     <div class="get-started-button">
                                         <a onclick="showEducationDetails()" id="get-started-button">EDUC</a>
                                     </div>
                                 </div>
+
+                                <div class="get-started">
+                                    <div class="get-started-button">
+                                        <a href='home-user.php' id="get-started-button">BACK</a>
+                                    </div>
+                                </div>
                         
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a id="get-started-button">UPDATE</a>
+                                        <a href='Account-details/update-personal.php' id="get-started-button">UPDATE</a>
                                     </div>
                                 </div>
 
@@ -261,7 +268,7 @@
                                         if ($postGradSchool != null) 
                                         {
                                             echo "<div class='educ'>
-                                                    <p>Post Graduate School: $postGradCourse</p>
+                                                    <p>Post Graduate School: $postGradSchool</p>
                                                 </div>";
                                         }
                                         else 
@@ -288,10 +295,16 @@
                                     <a onclick="showAccountDetails()" id="get-started-button">ACCOUNT</a>
                                 </div>
                             </div>
+
+                            <div class="get-started">
+                                <div class="get-started-button">
+                                    <a href='home-user.php' id="get-started-button">BACK</a>
+                                </div>
+                            </div>
                     
                             <div class="get-started">
                                 <div class="get-started-button">
-                                    <a id="get-started-button">UPDATE</a>
+                                    <a href='Account-details/update-educ.php'id="get-started-button">UPDATE</a>
                                 </div>
                             </div>
 
@@ -340,10 +353,16 @@
                                     <a onclick="showEducationDetails()" id="get-started-button">EDUC</a>
                                 </div>
                             </div>
+
+                            <div class="get-started">
+                                <div class="get-started-button">
+                                    <a href='home-user.php' id="get-started-button">BACK</a>
+                                </div>
+                            </div>
                     
                             <div class="get-started">
                                 <div class="get-started-button">
-                                    <a id="get-started-button">UPDATE</a>
+                                    <a href='Account-details/update-award.php' id="get-started-button">UPDATE</a>
                                 </div>
                             </div>
 

@@ -36,7 +36,7 @@
 
                 <div class="login-form-container">
 
-                    <form action="login-verification.php" method="POST">
+                    <form action="login-admin-verification.php" method="POST">
                         
                         <div id="login-header">
 
