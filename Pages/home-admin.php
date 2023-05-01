@@ -13,7 +13,7 @@
 
     <head>
 
-    <div class="header">
+        <div class="header">
             <h1 onclick="location.href='get-started.php'">LoL Drive</h1>
 
             <div class="login-header">
@@ -30,7 +30,7 @@
 
             </div>
 
-    </div>
+        </div>
 
     </head>
 
@@ -81,7 +81,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="Sub-Pages/quiz-user.php" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages-Admin/quiz-admin.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="Sub-pages/assessment-user.php" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages-Admin/assessment-admin.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="Sub-Pages/exam-user.php" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages-Admin/exam-admin.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="Sub-Pages/project-user.php" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages-Admin/project-admin.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +149,7 @@
 
                                 <div class="get-started">
                                     <div class="get-started-button">
-                                        <a href="Sub-Pages/project-user.php" id="get-started-button">PROCEED</a>
+                                        <a href="Sub-Pages-Admin/user-admin.php" id="get-started-button">PROCEED</a>
                                     </div>
                                 </div>
                             </div>
